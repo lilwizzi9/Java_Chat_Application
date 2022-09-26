@@ -7,6 +7,7 @@ public abstract class conn extends Thread{
     Socket s;
     boolean isServer;
     String IP;
+    ServerSocket sock;
 
 
     @Override
@@ -15,7 +16,7 @@ public abstract class conn extends Thread{
     try{
         if(isServer){
             // Create Server Socket
-        ServerSocket sock = new ServerSocket(2211);
+        sock = new ServerSocket(2211);
         System.out.println("Server Started");
 
         // Accept Connection and Store in var s
