@@ -52,6 +52,9 @@ public abstract class conn extends Thread{
     
     
     }
+
+
+    
     public conn(boolean isServer,String IP){this.IP = IP; this.isServer=isServer;}
  
 
